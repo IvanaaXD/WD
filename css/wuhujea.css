@@ -1,0 +1,33 @@
+.slicica{
+	width: 50px !important;
+	height: fit-content !important;
+}
+
+.btn{
+	font-family: Roboto !important;
+	text-align: center !important;
+	margin: auto !important;
+	padding-top: 0 !important;
+	margin-right: 5vw !important;
+	color: white !important;
+	font-size: 2vh !important;
+	height: 7vh !important;
+	width: 7vw !important;
+}
+
+.add{
+	background-color: #5cb85c !important;
+	padding-top: 0 !important;
+}
+
+.edit{
+	background-color: #4bbdeb !important;
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+
+.delete{
+	margin-left: 0 !important;
+	margin-right: 4vw !important;
+	background-color: #ea3030 !important;
+}

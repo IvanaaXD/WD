@@ -1,0 +1,70 @@
+.pagenotfound{
+	display: flex !important;
+	justify-content: space-around !important;
+	align-items: center !important;
+	flex-direction: row !important;
+	z-index: 400 !important;
+	margin-bottom: 0 !important;
+}
+
+.pagenotfound img{
+	max-width: 25% !important;
+	flex-basis: 50% !important;
+	height: fit-content !important;
+}
+
+.tekst{
+	color: #fff !important;
+	font-size: 5vh !important;
+	text-align: left !important;
+}
+
+.btn{
+	color: #bf1e1e !important;
+	margin-bottom: 10% !important;
+	margin-top: 10% !important;
+	text-align: center !important;
+	width: 40% !important;
+	margin-left: 30% !important;
+	padding-top: 7px !important;
+	padding-bottom: 7px !important;
+	font-size: 20px !important;
+	border-radius: 3% !important;
+	background-color: #fff !important;
+	border-color: #bf1e1e;
+	cursor: pointer;
+}
+
+.btn:hover{
+	background-color: #bf1e1e !important;
+	border-color: #fff !important;
+	color: #fff !important;
+}
+
+.btn a:hover{
+	color: #fff !important;
+}
+
+.btn a{
+	color: #fff !important;
+}
+
+@media(max-width: 800px){
+	.pagenotfound{
+		flex-direction: column !important;
+	}
+
+	.tekst{
+		text-align: center !important;
+	}
+
+	.btn{
+		margin-left: 5% !important;
+	}
+
+	.pagenotfound img{
+	max-width: 50% !important;
+	flex-basis: 50% !important;
+	height: fit-content !important;
+}
+}

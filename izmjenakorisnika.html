@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	<title>PICK&GO</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/izmjenakorisnika.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/registrationandsignupwithbootstrap.css">
+ 
+
+</head>
+
+<body style="background-color: #edfafc">
+	
+	<section class="heather">
+		<nav>
+			<a href="pocetna.html"><img class="logo" src="slike/logo0.png"></a>
+			<i class="fa fa-bars" id="nav-toggle"></i>
+			<div class="navbar" id="navlink"> 
+			<i class="fa fa-times" onclick="toggleNavbar()"></i>
+
+				<ul>
+					<li><a href="pocetna.html">POČETNA</a></li>
+					<li><a href="svedestinacije.html">DESTINACIJE</a></li>
+					<li>
+						<div class="strelica" id="strelica">
+						<div class="dropdown" id="dropdown">
+						  <button class="dropbtn" onclick="drop()">IZMJENA PODATAKA 
+						    </button>
+						  <div class="dropdown-content" id="dropdown-content">
+						  	
+						  		<a href="izmjenaagencije.html">IZMJENA AGENCIJE</a>
+						  		<a href="izmjenadestinacije.html">IZMJENA DESTINACIJE</a>
+						  		<a href="izmjenakorisnika.html">IZMJENA KORISNIKA</a>
+						  	
+						  </div>
+						</div>
+		
+					</div></li>
+					<li><button onclick="showlogine()" class="butt">PRIJAVA</button></li>
+					<li><button onclick="showsignup()" class="butt">REGISTRACIJA</button></li>
+				</ul>
+			</div>
+			<!--i class="fa fa-bars" id="nav-toggle" ></i-->
+
+		</nav>
+
+	</section>
+
+	<div class="slika">
+		<img src="slike/ss.jpg" class="pocetnaslika">
+		<div class="slogan">
+			<p>Choose your destination</p>
+			<p>and enjoy the trip!</p>
+		</div>
+	</div>
+
+<div class="argh">
+		
+	<div class="popupdelete" id="delete-popup">
+	  <div class="popupdelete-content">
+	    <div class="close-btn" onclick="closedelete()">&#10006;</div>
+	    <h2>Brisanje korisnika</h2>
+	    <form>
+	      <label for="username">Da li ste sigurni da zelite izbrisati ovog korisnika?</label>
+	      <div class="buttons">
+	      	<button class="delete-btn" id="cancel-btn" onclick="closedelete()">Ne</button>
+	        <button class="yes-btn" id="confirm-btn" >Da</button>
+
+	        
+	      </div>
+	    </form>
+	  </div>
+	</div>
+
+	</div>
+
+
+	<div class="argh">
+		
+	<div class="popuplog" id="login-popup">
+	  <div class="popuplog-content">
+	    <div class="close-btn" onclick="closelogin()">&#10006;</div>
+	    <h2>Log in</h2>
+	    <form>
+	      <label for="username">Korisnicko ime:</label>
+	      <input type="text" placeholder="Username" name="username" >
+	      <label for="password">Lozinka:</label>
+	      <input type="password" placeholder="Password" name="password">
+	      <div class="buttons">
+	        <button class="register-btn" onclick="showsignup()">Sign up</button>
+	        <button type="close-btn" onclick="checkuser(event)">Submit</button>
+	      </div>
+	    </form>
+	  </div>
+	</div>
+
+	</div>
+
+			<div class="argh">
+		
+	<div class="popuplogS" id="loginS-popup">
+	  <div class="popuplogS-content">
+	    <h2>Upsješno ste se prijavili!</h2>
+	    	      <div class="buttons">
+	        <button class="register-btn" onclick="closeloginS()">OK</button>
+	       </div>
+	    
+	  </div>
+	</div>
+
+	</div>
+
+	<div class="popuplogerror" id="loginerror-popup">
+	  <div class="popuplogerror-content">
+	    <h2>Pogrešan unos!</h2>
+	    	      <div class="buttons">
+	        <button class="register-btn" onclick="closeloginerror()">OK</button>
+	       </div>
+	    
+	  </div>
+	</div>
+
+	<div id="overlayyy" class="overlayyy"></div>
+
+	<div id="overlayy" class="overlayy"></div>
+
+	<div class="argh">
+
+<div class="popupsign" id="register-popup">
+	  <div class="popup-content" id="popup-content">
+	    <div class="close-btn" onclick="closesignup()">&#10006;</div>
+	    <h2>Registracija</h2>
+	<form id="signup-form" >
+    <label for="name">Ime:</label>
+    <input type="text" placeholder="Name" name="name" id="name" required>
+    <span id="name-error" class="error-message"></span>
+    <br>
+    <label for="surname">Prezime:</label>
+    <input type="text" placeholder="Surname" name="surname" id="surname" required>
+    <span id="surname-error" class="error-message"></span>
+    <br>
+    <label for="username">Korisnicko ime:</label>
+    <input type="text" placeholder="Username" name="username" id="username" required>
+    <span id="username-error" class="error-message"></span>
+    <br>
+    <label for="password">Lozinka:</label>
+    <input type="password" placeholder="Password" name="password" id="password" required>
+    <span id="password-error" class="error-message"></span>
+    <br>
+    <label for="email">E-mail:</label>
+    <input type="email" placeholder="Email" name="email" id="email" required>
+    <span id="email-error" class="error-message"></span>
+    <br>
+    <label for="dateofbirth">Datum rodjenja:</label>
+    <input type="date" placeholder="Date of Birth" name="dateofbirth" id="dateofbirth" required>
+    <br>
+    <label for="address">Adresa:</label>
+    <input type="text" placeholder="Address" name="address" id="address" required>
+    <span id="address-error" class="error-message"></span>
+    <br>
+    <label for="phone">Broj telefona:</label>
+    <input type="tel" placeholder="Phone Number" name="phone" id="phone" required>
+    <span id="phone-error" class="error-message"></span>
+    <br>
+    <br>
+    <div class="buttons">
+        <button type="submit" id="submitButton" onclick="validateForm(event)">Submit</button>
+        <button class="close-btn" onclick="clearForm()">&#10006;</button>
+    </div>
+</form>
+
+	  </div>
+	</div>
+	</div>
+
+	<div class="argh">
+
+	<div class="popupchange" id="change-popup">
+	  <div class="popupchange-content">
+	    <div class="close-btn" onclick="closechange()">&#10006;</div>
+	    <h2>Izmjena korisnika</h2>
+	    <form id="changekorisnik-form">
+	      <label for="name">Ime:</label>
+	      <input type="text" placeholder="Name" name="nameee" id="Ime" required>
+				<span id="name-errorrr" class="errorrr-message"></span>
+				<br>
+	      <label for="surname">Prezime:</label>
+	      <input type="text" placeholder="Surname" name="surnameee" id="Prezime" required>
+	      <span id="surname-errorrr" class="errorrr-message"></span>
+    		<br>
+	      <label for="username">Korisnicko ime:</label>
+	      <input type="text" placeholder="Username" name="usernameee"  id="KorisnickoIme" required>
+	      <span id="username-errorrr" class="errorrr-message"></span>
+    		<br>
+	      <label for="password" class="labela">Lozinka:</label>
+		    <input type="password" id="Lozinka" class="password" name="passworddd" />
+		    <span id="password-errorrr" class="errorrr-message"></span>
+    		<br>
+	      <label for="email">E-mail:</label>
+	      <input type="email" placeholder="Email" name="emailll" id="Gmail" required>
+	      <span id="email-errorrr" class="errorrr-message"></span>
+    		<br>
+	      <label for="dateofbirth">Datum rodjenja:</label>
+	      <input type="date" placeholder="Date of Birth" name="dateofbirth" id="DatumRodjenja" required>
+	      <label for="adress">Adresa:</label>
+	      <input type="text" placeholder="Address" name="addressss" id="Adresa" required>
+	      <span id="address-errorrr" class="errorrr-message"></span>
+    		<br>
+	      <label for="phone">Broj telefona:</label>
+	      <input type="tel" placeholder="Phone Number" name="phoneee" id="Broj" required>
+	   	  <span id="phone-errorrr" class="errorrr-message"></span>
+    		<br>
+    		<br>
+	      <div class="buttons">
+	        <button type="submit" id="submitButtonKI" class="submitBtn" onclick="validateFormKI(event,row)">Submit</button>
+	        <button class="close-btn" onclick="closechange()">&#10006;</button>
+	      </div>
+	    </form>
+	  </div>
+	</div>
+	</div>
+
+	<div class="argh">
+
+	<div class="popupadd" id="add-popup">
+	  <div class="popupadd-content">
+	    <div class="close-btn" onclick="closeadd()">&#10006;</div>
+	    <h2>Dodavanje korisnika</h2>
+	<form id="addkorisnik-form" >
+    <label for="namee">Ime:</label>
+    <input type="text" placeholder="Name" name="namee" id="Imeee" required>
+    <span id="name-errorr" class="errorr-message"></span>
+    <br>
+    <label for="surnamee">Prezime:</label>
+    <input type="text" placeholder="Surname" name="surnamee" id="Prezimeee" required>
+    <span id="surname-errorr" class="errorr-message"></span>
+    <br>
+    <label for="usernamee">Korisnicko ime:</label>
+    <input type="text" placeholder="Username" name="usernamee" id="KorisnickoImeee" required>
+    <span id="username-errorr" class="errorr-message"></span>
+    <br>
+    <label for="passwordd">Lozinka:</label>
+    <input type="password" placeholder="Password" name="passwordd" id="Lozinkaaa" required>
+    <span id="password-errorr" class="errorr-message"></span>
+    <br>
+    <label for="emaill">E-mail:</label>
+    <input type="email" placeholder="Email" name="emaill" id="Gmailll" required>
+    <span id="email-errorr" class="errorr-message"></span>
+    <br>
+    <label for="dateofbirthh">Datum rodjenja:</label>
+    <input type="date" placeholder="Date of Birth" name="dateofbirthh" id="DatumRodjenjaaa" required>
+    <br>
+    <label for="addresss">Adresa:</label>
+    <input type="text" placeholder="Address" name="addresss" id="Adresaaa" required>
+    <span id="address-errorr" class="errorr-message"></span>
+    <br>
+    <label for="phonee">Broj telefona:</label>
+    <input type="tel" placeholder="Phone Number" name="phonee" id="Brojjj" required>
+    <span id="phone-errorr" class="errorr-message"></span>
+    <br>
+    <br>
+    <div class="buttons">
+     <button type="button" id="submitButtonK" onclick="validateFormK(event)">Submit</button>
+     <button class="close-btn" onclick="clearFormK()">&#10006;</button>
+    </div>
+</form>
+	  </div>
+	</div>
+	</div>
+
+	<hr class="linija">
+
+	<div class="hed">
+	<h1 class="table-title">Izmjena korisnika</h1>
+	<button class="btn add" onclick="showadd()">DODAJ KORISNIKA</button>
+	</div>
+
+	<section class="izmjena">
+
+<!--Table-->
+<div class="row  table-responsive">
+<table class="table table-striped table-hover w-auto">
+
+  <!--Table head-->
+  <thead>
+    <tr>
+      <th><strong>KORISNICKO IME</strong></th>
+      <th><strong>LOZINKA</strong></th>
+      <th><strong>IME</strong></th>
+      <th><strong>PREZIME</strong></th>
+      <th><strong>EMAIL<strong></th>
+      <th><strong>DATUM RODJENJA</strong></th>
+      <th><strong>ADRESA<strong></th>
+      <th><strong>TELEFON</strong></th>
+      <th id="edit-button" onclick="showchange()"></th>
+      <th id="delete-button"></th>
+    </tr>
+  </thead>
+  <!--Table head-->
+
+  <!--Table body-->
+  <tbody id="sviKorisnici">
+    
+  </tbody>
+  <!--Table body-->
+
+
+</table>
+<!--Table-->
+</div>
+
+</section>
+ 
+	<hr class="linija">
+
+	<hr class="flinija11">
+
+	<section class="footer">
+
+		<h4>O nama</h4>
+		<p class="opis"><i>PICK & GO turistička agencija već jednu deceniju uspješno sarađuje sa Vama. <br> Vi izaberite destinaciju, a mi ćemo se potruditi da Vaše vrijeme sa nama bude nezaboravno! <br><br>Za više informacija, kontaktirajte nas!</i></p>
+
+		<div class="ikonice">
+			<a href="https://www.facebook.com/profile.php?id=100005628315765" target="blank"><i class="fa fa-facebook-official"></i></a>
+			<a href="https://instagram.com/svradovanovicivana?igshid=NjNlMDhmYTc=" target="blank"><i class="fa fa-instagram"></i></a>
+			<a href="mailto:radovanovic.sv23.2022@uns.ac.rs" target="blank"><i class="fa fa-envelope-o"></i></a>
+			<a href="tel:+381643684057"><i class="fa fa-phone"></i></a>
+		</div>
+
+	</section>
+
+	<hr class="flinija22">
+		
+<!-----meni----->
+	<!--script>
+	var navlink = document.getElementById('navlink');
+
+	function showmenu(){
+		navlink.style.right = "0px";
+	}
+
+	function hidemenu(){
+		navlink.style.right = "-200px";
+	}
+</script-->
+
+<script>
+	    let dropdowns = document.getElementById("dropdown-content");
+
+	    function drop(){
+	    	dropdowns.classList.toggle("open-menu");
+	    }
+</script>
+
+<script src="script/izmjenakorisnika.js"></script>
+
+</body>
+
+</html>

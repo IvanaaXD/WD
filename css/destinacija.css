@@ -1,0 +1,3077 @@
+
+@font-face{
+	font-family: "Kaushan_Script";
+	src: url(Kaushan_Script/KaushanScript-Regular.ttf);
+}
+
+@font-face{
+	font-family: "Robotomedium";
+	src: url("../Roboto/Roboto-Medium.ttf");
+}
+
+@font-face{
+	font-family: "Roboto";
+	src: url("../Roboto/Roboto-Light.ttf");
+}
+
+.hed{
+	display: flex !important;
+	justify-content: space-between !important;
+	align-items: center !important;
+	background-color: #1860bd !important;
+	 margin-left: auto !important;
+  margin-right: auto !important;
+  width: 85% !important;
+}
+
+.th{
+	text-align: right !important;
+
+}
+
+.td{
+	text-align: left !important;
+}
+
+.destinacijaa{
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: space-around !important;
+}
+
+.opisdestinacije{
+	font-family: Roboto !important;
+	text-align: center !important;
+	margin-left: 2vw !important;
+	margin-right: 5vw !important;
+	margin-bottom: 1vw !important;
+	font-size: 2vh !important;
+	color: #1860bd !important;
+}
+
+.table-title{
+	font-family: Robotomedium !important;
+	text-align: left !important;
+	margin: auto !important;
+	padding-top: 3vh !important;
+	padding-bottom: 3vh !important;
+	color: white !important;
+	font-size: 4vh !important;
+	width: 80% !important;
+	padding-bottom: 1.5vh !important;
+	padding-left: 1.5vw !important;
+	  margin-left: auto !important;
+  margin-right: auto !important;
+	padding-right: 1.5vw !important;
+}
+
+.container{
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  font-family: Roboto !important;
+
+}
+
+.table{
+	margin-top: 0vh !important;
+	height: fit-content !important;
+	overflow: none !important;
+	font-size: 2vh !important;
+	font-family: Roboto !important;
+}
+
+.td{
+	margin-top: 2vh !important;
+	padding-left: 1vw !important;
+	color: #1860bd !important;
+	padding-top: 1vh !important;
+	padding-bottom: 1vh !important;
+}
+
+.th{
+		padding-bottom: 0vw !important;
+		padding-left: 1vw !important;
+		font-family: Roboto !important;
+	  text-align: center !important;
+	  color: #1860bd !important;
+}
+
+.btn{
+	font-family: Roboto !important;
+	text-align: center !important;
+	margin: auto !important;
+	padding-top: 0 !important;
+	margin-right: 5vw !important;
+	color: white !important;
+	font-size: 2vh !important;
+	height: 7vh !important;
+	width: 7vw !important;
+}
+
+.add{
+	background-color: #5cb85c !important;
+	padding-top: 0 !important;
+}
+
+ .linija{
+	width: 64.5% !important;
+	height: 3px !important;
+	color: #1860bd !important;
+	background-color: #1860bd !important;
+	margin-left: 17.5% !important;
+	margin-right: 17.5% !important;
+	margin-top: 7vh !important;
+	margin-bottom: 5vh !important;
+}
+
+.slicica{
+	width: 50px !important;
+	max-height: 40px !important;
+}
+
+
+.edit{
+	background-color: #4bbdeb !important;
+	margin-right: 0 !important;
+	margin-left: 1vw !important;
+}
+
+.delete{
+	margin-left: 0 !important;
+	margin-right: 1vw !important;
+	background-color: #ea3030 !important;
+}
+
+body{
+	align-items: center !important;
+	text-align: center !important;
+	box-sizing: border-box !important;
+}
+
+.tabela{
+	font-family: Roboto !important;
+	margin-right: 1vw !important;
+	margin-top: 0vh !important;
+	margin-bottom: 2vh !important;
+}
+
+.dropdown {
+  position: relative !important;
+  display: inline-block !important;
+}
+
+.dropdown .dropbtn {
+  font-size: 2.05vh !important;    
+  border: none !important;
+  outline: none !important;
+  color: #1860bd !important;
+  padding: 0px 0px !important;
+  background-color: inherit !important;
+  font-family: inherit !important;
+  text-align: left !important;
+  cursor: pointer !important;
+}
+
+.dropbtn:hover{
+	background-color: #555 !important;
+}
+
+.dropdown-content {
+  display: none !important;
+  position: absolute !important;
+  background-color: #c9efff !important;
+  min-width: 150px !important;
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2) !important;
+  padding: 6px 2px !important;
+  z-index: 5 !important;
+  text-align: center !important;
+  overflow: hidden !important;
+  height: 0px !important;
+  transition: 0.5s;
+}
+
+.dropdown-content.open-menu{
+	height: 120px !important;
+}
+
+.vl {
+  border-left: 3px solid #1860bd;
+  height: 100px;
+}
+
+.carousel{
+	width: 50% !important;
+	height: fit-content !important;
+	margin-left: 25% !important;
+}
+
+.dropdown-content a{
+	display: block !important;
+	font-size: 2.15vh !important;
+}
+
+.show{
+	display: block !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block !important;
+}
+
+.icon{
+	display: none !important;
+}
+
+.strelica a:hover, .dropdown:hover .dropbtn {
+  background-color: #93defc !important;
+}
+
+
+/*---POCETNA---*/
+
+
+*{
+	margin: 0 !important;
+	padding: 0 !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+
+.heather{
+	height: 63pt !important;
+	width: 100% !important;
+	background-color: #93defc !important;
+	background-size: cover !important;
+	background-position: center !important;
+	position: fixed !important;
+	z-index: 100 !important;
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+}
+
+.logo{
+	height: 55pt !important;
+	width: 100% !important;
+	margin-left: 2% !important;
+	margin-top: 1% !important;
+	padding: 0 !important;
+	margin-bottom: 3% !important;
+}
+
+a{
+	color: #1860bd !important;
+}
+
+nav{
+	display: flex !important;
+	justify-content: space-between !important;
+	padding-left: 1% !important;
+	align-items: center !important;
+}
+
+#navlink{
+	flex: 1 !important;
+	text-align: right !important;
+	left: 16.65% !important;
+}
+
+#navlink ul li {
+	font-family: Robotomedium !important;
+	list-style: none !important;
+	display: inline-block !important;
+	padding: 20px 12px !important;
+	margin-bottom: 2.75px !important;
+	position: relative !important;
+}
+
+.slika{
+	text-align: center !important;
+}
+
+.pocetnaslika{
+  max-width: 70% !important;
+  max-height: 75% !important;
+}
+
+.slogan{
+	font-family: Kaushan_Script !important;
+	font-size: 5vh !important;
+	color: #edfafc !important;
+	padding: 0 !important;
+	position: absolute !important;
+	text-shadow: 2px 2px #707678 !important;
+	top:  35vw !important;
+    left: 50%  !important;
+    text-align: center !important;
+    transform: translate(-50% , -50% ) !important;
+}
+
+#navlink ul li a{
+	color: #1860bd !important;
+	text-decoration: none !important;
+}
+
+#navlink ul li::after{
+	content: '' !important;
+	width: 0% !important;
+	height: 2px !important;
+	background: #1860bd !important;
+	display: block !important;
+	margin: auto !important;
+	transition: 0.5s !important;
+}
+
+#navlink ul li:hover::after{
+	width: 100% !important;
+}
+
+nav .fa{
+	display: none !important;
+}
+
+.linija{
+	width: 64.5% !important;
+	height: 5px !important;
+	color: #1860bd !important;
+	background-color: #1860bd !important;
+	margin-left: 17.5% !important;
+	margin-right: 17.5% !important;
+	margin-top: 7vh !important;
+	margin-bottom: 5vh !important;
+	opacity: 1 !important;
+}
+
+.naziv{
+	font-family: Roboto !important;
+	text-align: center !important;
+	margin: auto !important;
+	padding-top: 1.5vh !important;
+	color: #1860bd !important;
+	font-size: 4vh !important;
+	width: 80%;
+}
+
+.opis{
+	font-family: Roboto !important;
+	text-align: center !important;
+	margin-left: 30vw !important;
+	margin-right: 30vw !important;
+	margin-bottom: 1vw !important;
+	font-size: 2vh !important;
+	color: #1860bd !important;
+}
+
+.navbar{
+	flex: 1 !important;
+	text-align: right !important;
+  padding-right: 10px !important; /* Add this property */
+  box-sizing: border-box !important;
+  display: none;
+}
+
+.footer {
+	text-align: center !important;
+	margin-top: 0.5vh !important;
+	margin-left: 0.35vw !important;
+	margin-right: 0.35vw !important;
+	margin-bottom: 0.5vh !important;
+	padding-top: 1vh !important;
+	padding-bottom: 1vh !important;
+	height: 27vh !important;
+	background-color: #93defc !important;
+}
+
+.footer h4{
+	font-family: Roboto !important;
+	margin-bottom: 1vw !important;
+	margin-top: 0.5vw !important;
+	color: #1860bd !important;
+	font-size: 2vh !important;
+}
+
+.ikonice{
+	display: flex !important;
+	align-items: center !important;
+}
+
+.ikonice .fa{
+	color: #1860bd !important;
+	cursor: pointer !important;
+	margin-top: 0vh !important;
+	margin-bottom: 1vh !important;
+	padding-left: 1vw !important;
+	padding-right: 1vw !important;
+}
+
+.flinija11{
+	width: 99% !important;
+	height: 3px !important;
+	text-align: center !important;
+	color: #1860bd !important;
+	background-color: #1860bd !important;
+	margin-top: 5vh !important;
+	margin-bottom: 0vh !important;
+	margin-left: 0.35vw !important;
+	margin-right: 0.35vw !important;
+	opacity: 1 !important;
+}
+
+.flinija22{
+	width: 99% !important;
+	height: 3px !important;
+	text-align: center !important;
+	color: #1860bd !important;
+	background-color: #1860bd !important;
+	margin-top: 0vh !important;
+	margin-bottom: 3vh !important;
+	margin-left: 0.35vw !important;
+	margin-right: 0.35vw !important;
+	opacity: 1 !important;
+}
+
+@media(max-width:350px) and (max-height:800px){
+
+	#navlink ul li {
+	display: block !important;
+	font-size: 3vh !important;
+	}
+
+		.navbar ul li .butt{
+		font-size: 2.7vh !important;
+	}
+
+	.container{
+		flex-direction: column !important;
+	}
+
+	.navbar{
+		overflow-y: auto;
+	}
+	.vl{
+		border-bottom: 3px solid #1860bd !important;
+		width: 100px;
+		height: 0px;
+		border-left: 0px !important;
+		margin-bottom: 10px !important;
+	}
+
+	#navlink{
+	position: absolute !important;
+	background-color: rgba(147, 222, 252, 1.0) !important;
+	height: 110vh !important;
+	width: 240px !important;
+	margin-left: 15% !important;
+	top: 8vh !important;
+	/*right: -200px;*/
+	text-align: left !important;
+	transition: right 0.3s ease !important;
+	z-index: 5000 !important;
+	display: none !important;
+	}
+
+	#navlink.show{
+		display: block !important;
+	}
+
+	nav .fa{
+	display: inline-block !important;
+	color: #fff !important;
+	margin: 10px !important;
+	font-size: 17px !important;
+	cursor: pointer;
+	position: relative !important;
+	z-index: 5000 !important;
+	}
+
+	#navlink ul{
+	padding: 30px !important;
+	}
+
+	.heather{
+	height: 8vh !important;
+	width: 100% !important;
+	background-color: #93defc !important;
+	background-size: cover !important;
+	background-position: center !important;
+	position: fixed !important;
+	top: 0%;
+	}
+
+	.naziv{
+	text-align: center !important;
+	margin: auto !important;
+	margin-top: 0vh !important;
+	color: #1860bd !important;
+	font-size: 3vh !important;
+	width: 80% !important;
+	}
+
+	.linija{
+	width: 80% !important;
+	height: 1px !important;
+	color: #1860bd !important;
+	background-color: #1860bd !important;
+	margin-left: 10vw !important;
+	margin-right: 10vw !important;
+	margin-top: 3vh !important;
+	margin-bottom: 3vh !important;
+	}
+
+	.logo{
+	height: 6vh !important;
+	width: 100% !important;
+	margin-left: 2% !important;
+	margin-top: 2% !important;
+	padding: 0 !important;
+	margin-bottom: 1% !important;
+	}
+
+	.pocetnaslika{
+	position: relative !important;
+  	max-width: 100% !important;
+  	max-height: 100% !important;
+  	z-index: -100 !important;
+	}
+
+	.slogan{
+	font-family: Kaushan_Script !important;
+	font-size: 11pt !important;
+	color: #edfafc !important;
+	padding: 0 !important;
+	position: absolute !important;
+	text-shadow: 2px 2px #707678 !important;
+	top: 47vw !important;
+    left: 50% !important;
+    text-align: center !important;
+    z-index: -1 !important;
+	}
+
+	.footer {
+	text-align: center !important;
+	margin-top: 0.5vh !important;
+	margin-left: 0.35vw !important;
+	margin-right: 0.35vw !important;
+	margin-bottom: 0.5vh !important;
+	padding-top: 0.5vh !important;
+	padding-bottom: 0.5vh !important;
+	background-color: #93defc !important;
+	height: 27vh !important;
+	}
+
+	.footer h4{
+	margin-bottom: 1vh !important;
+	margin-top: 0.5vh !important;
+	color: #1860bd !important;
+	}
+
+	.opis{
+	text-align: center !important;
+	position: absolute !important;
+	margin-left: 5vw !important;
+	margin-right: 5vw !important;
+	margin-bottom: 1vh !important;
+	color: #1860bd !important;
+	font-size: 2vh !important;
+	}
+
+	.ikonice{
+	display: flex !important;
+	align-items: center !important;
+	}
+.carousel{
+	width: 80% !important;
+	height: fit-content !important;
+	margin-left: 10% !important;
+}
+	.ikonice .fa{
+	color: #1860bd !important;
+	cursor: pointer !important;
+	margin-top: 17vh !important;
+	margin-bottom: 1vh !important;
+	padding-left: 1vw !important;
+	padding-right: 1vw !important;
+	}
+
+		.destinacija{
+	flex-direction: column;
+	}
+
+	.v1{
+		height: 0px !important;
+	}
+
+	.tabela{
+	font-size: 1.5vh ;
+	}
+
+			.dropdown{
+		text-align: left !important;
+	}
+
+	.dropdown .dropbtn{
+		font-size: 2.5vh !important;
+	}
+
+	.dropdown-content{
+		text-align: left !important;
+		left: 0%;
+		margin-right: 0% !important;
+		margin-left: 0% !important;
+		padding: 0 0 0 0 !important;
+	}
+
+	.dropdown-content a{
+		font-size: 2.6vh !important;
+	}
+
+	.dropdown-content.open-menu{
+		height: 150px !important;
+	}
+
+}
+
+@media(min-width: 351px) and (max-width:500px) and (max-height:950px){
+
+	.navbar ul li {
+	font-size: 2.7vh !important;
+	display: block !important;
+	}
+
+	.navbar{
+		overflow-y: auto;
+	}
+
+	.navbar ul li .butt{
+		font-size: 2.7vh !important;
+	}
+
+	#navlink{
+	position: absolute !important;
+	background-color: rgba(147, 222, 252, 1.0) !important;
+	height: 110vh !important;
+	width: 280px !important;
+	margin-left: 27% !important;
+	top: 8vh !important;
+	/*right: -200px;*/
+	text-align: left !important;
+	transition: right 0.3s ease !important;
+	padding-right: 130px !important;
+	z-index: 5000 !important;
+	display: none !important;
+	}
+
+	#navlink.show{
+		display: block !important;
+	}
+
+	nav .fa{
+	display: inline-block !important;
+	color: #fff !important;
+	margin: 5px !important;
+	font-size: 22px !important;
+	cursor: pointer;
+	position: relative !important;
+	z-index: 5000 !important;
+	text-align: left !important;
+	}
+
+
+	.container{
+		flex-direction: column !important;
+	}
+
+	.vl{
+		border-bottom: 3px solid #1860bd !important;
+		width: 100px;
+		height: 0px;
+		border-left: 0px !important;
+		margin-bottom: 10px !important;
+	}
+
+.carousel{
+	width: 80% !important;
+	height: fit-content !important;
+	margin-left: 10% !important;
+}
+
+	.navbar ul{
+	padding: 20px !important;
+	}
+
+	.heather{
+	height: 8vh !important;
+	width: 100% !important;
+	background-color: #93defc !important;
+	background-size: cover !important;
+	background-position: center !important;
+	position: fixed !important;
+	top: 0%;
+	}
+
+	.naziv{
+	font-family: Robotomedium !important;
+	font-size: 5vh !important;
+	text-align: center !important;
+	margin: auto !important;
+	margin-top: 0vh !important;
+	color: #1860bd !important;
+	font-size: 3vh !important;
+	width: 80% !important;
+	}
+
+	.linija{
+	width: 80% !important;
+	height: 2px !important;
+	color: #1860bd !important;
+	background-color: #1860bd !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	margin-top: 3vh !important;
+	margin-bottom: 3vh !important;
+	}
+
+	.logo{
+	height: 7vh !important;
+	width: 100% !important;
+	margin-left: 2% !important;
+	margin-top: 2% !important;
+	padding: 0 !important;
+	margin-bottom: 1% !important;
+	}
+
+	.pocetnaslika{
+	position: relative !important;
+  	max-width: 100% !important;
+  	max-height: 100% !important;
+  	z-index: -100 !important;
+	}
+
+	.slogan{
+	font-family: Kaushan_Script !important;
+	font-size: 11pt !important;
+	color: #edfafc !important;
+	padding: 0 !important;
+	position: absolute !important;
+	text-shadow: 2px 2px #707678 !important;
+	top: 47vw !important;
+    left: 50% !important;
+    text-align: center !important;
+    z-index: -1 !important;
+	}
+
+	.footer {
+	text-align: center !important;
+	margin-top: 0.5vh !important;
+	margin-left: 0.35vw !important;
+	margin-right: 0.35vw !important;
+	margin-bottom: 0.5vh !important;
+	padding-top: 0.5vh !important;
+	padding-bottom: 0.5vh !important;
+	background-color: #93defc !important;
+	height: 30vh !important;
+	}
+
+	.footer h4{
+	margin-bottom: 1vh !important;
+	margin-top: 0.5vh !important;
+	color: #1860bd !important;
+	}
+
+	.opis{
+	text-align: center !important;
+	position: absolute !important;
+	margin-left: 5vw !important;
+	margin-right: 5vw !important;
+	margin-bottom: 1vh !important;
+	color: #1860bd !important;
+	font-size: 2vh !important;
+	}
+
+	.ikonice{
+	display: flex !important;
+	align-items: center !important;
+	}
+
+	.ikonice .fa{
+	color: #1860bd !important;
+	cursor: pointer !important;
+	margin-top: 19vh !important;
+	margin-bottom: 2vh !important;
+	padding-left: 1vw !important;
+	padding-right: 1vw !important;
+	}
+
+	.destinacija{
+		flex-direction: column !important;
+	}
+
+	.v1{
+		height: 0 !importantS;
+	}
+
+	.opisdestinacije{
+		padding-top: 3vh !important;
+		font-size: 2vh !important;
+		padding-left: 10% !important;
+		padding-right: 10% !important;
+	}
+
+	.th, .td{
+		font-size: 2vh !important;
+	}
+
+	.dropdown{
+		text-align: left !important;
+	}
+
+	.dropdown .dropbtn{
+		font-size: 2.7vh !important;
+	}
+
+	.dropdown-content{
+		text-align: left !important;
+		left: 0%;
+		margin-right: 0% !important;
+		margin-left: 0% !important;
+		padding: 0 0 0 0 !important;
+	}
+
+	.dropdown-content a{
+		font-size: 2.7vh !important;
+	}
+
+	.dropdown-content.open-menu{
+	height: 180px !important;
+}
+
+
+
+}
+
+@media(min-width:501px) and (max-width:700px) and (max-height:300px){
+
+	.navbar ul li {
+	display: block !important;
+	font-size: 6vh;
+	}
+	.navbar{
+		overflow-y: auto;
+	}
+
+	.navbar ul li .butt{
+		font-size: 5.7vh !important;
+	}
+
+	.container{
+		flex-direction: column !important;
+	}
+
+	.vl{
+		border-bottom: 3px solid #1860bd !important;
+		width: 100px;
+		height: 0px;
+		border-left: 0px !important;
+		margin-bottom: 10px !important;
+	}
+
+	#navlink{
+	position: absolute !important;
+	background-color: rgba(147, 222, 252, 1.0) !important;
+	height: 110vh !important;
+	width: 280px !important;
+	margin-left: 45% !important;
+	top: 19vh !important;
+	/*right: -200px;*/
+	text-align: left !important;
+	transition: right 0.3s ease !important;
+	padding-right: 50px !important;
+	z-index: 5000 !important;
+	display: none !important;
+	}
+
+	#navlink.show{
+		display: block !important;
+	}
+
+	.navbar ul li a{
+	color: #1860bd !important;
+	text-decoration: none !important;
+	}
+
+	nav{
+	display: flex !important;
+	justify-content: space-between !important;
+	padding-left: 1% !important;
+	align-items: center !important;
+	}
+
+	.navbar ul li a{
+		color: #1860bd !important;
+		text-decoration: none !important;
+	}
+
+	.navbar ul li::after{
+		content: '' !important;
+		width: 0% !important;
+		height: 2px !important;
+		background: #1860bd !important;
+		display: block !important;
+		margin: auto !important;
+		transition: 0.5s !important;
+	}
+
+	.navbar ul li:hover::after{
+		width: 100% !important;
+	}
+
+	.slika{
+		text-align: center !important;
+	}
+
+	nav .fa{
+	display: block !important;
+	color: #fff !important;
+	margin: 10px !important;
+	font-size: 22px !important;
+	cursor: pointer !important;
+	position: relative !important;
+	z-index: 5000 !important;
+	}
+
+	.navbar ul{
+	padding: 30px !important;
+	}
+
+	.heather{
+	height: 19vh !important;
+	width: 100% !important;
+	background-color: #93defc !important;
+	background-size: cover !important;
+	background-position: center !important;
+	position: fixed !important;
+	}
+
+	.naziv{
+	font-family: Robotomedium !important;
+	text-align: center !important;
+	margin: auto !important;
+	margin-top: 0vh !important;
+	color: #1860bd !important;
+	font-size: 10vh !important;
+	}
+
+	.linija{
+	width: 79% !important;
+	height: 2px !important;
+	color: #1860bd !important;
+	background-color: #1860bd !important;
+	margin-left: 10vw !important;
+	margin-right: 10vw !important;
+	margin-top: 5vh !important;
+	margin-bottom: 3vh !important;
+	}
+
+	.logo{
+	height: 30pt !important;
+	width: 100% !important;
+	margin-left: 2% !important;
+	margin-top: 1% !important;
+	padding: 0 !important;
+	margin-bottom: 1% !important;
+	}
+
+	.pocetnaslika{
+	position: relative !important;
+  	max-width: 75% !important;
+  	max-height: 75% !important;
+  	z-index: -100 !important;
+	}
+
+	.slogan{
+	font-family: Kaushan_Script !important;
+	font-size: 7vh !important;
+	color: #edfafc !important;
+	padding: 0 !important;
+	position: absolute !important;
+	text-shadow: 2px 2px #707678 !important;
+	top: 37vw !important;
+    left: 50% !important;
+    text-align: center !important;
+    z-index: -1 !important;
+	}
+
+	.footer {
+	text-align: center !important;
+	margin-top: 0.5vh !important;
+	margin-left: 0.35vw !important;
+	margin-right: 0.35vw !important;
+	margin-bottom: 0.5vh !important;
+	padding-top: 0.5vh !important;
+	padding-bottom: 0.5vh !important;
+	background-color: #93defc !important;
+	height: 60vh !important;
+	}
+
+	.footer h4{
+	margin-bottom: 3vh !important;
+	margin-top: 0.5vh !important;
+	color: #1860bd !important;
+	font-size: 5vh !important;
+	}
+
+	.opis{
+	text-align: center !important;
+	position: absolute !important;
+	margin-left: 10vw !important;
+	margin-right: 10vw !important;
+	margin-bottom: 1vh !important;
+	color: #1860bd !important;
+	font-size: 5vh !important;
+	}
+
+	.ikonice{
+	display: flex !important;
+	align-items: center !important;
+	}
+
+	.ikonice .fa{
+	color: #1860bd !important;
+	cursor: pointer !important;
+	margin-top: 40vh !important;
+	margin-bottom: 1vh !important;
+	padding-left: 1vw !important;
+	padding-right: 1vw !important;
+	}
+
+	.destinacija{
+		flex-direction: column !important;
+	}
+
+	.v1{
+		height: 0 !importantS;
+	}
+
+	.opisdestinacije{
+		padding-top: 3vh !important;
+		font-size: 5vh !important;
+		padding-left: 10% !important;
+		padding-right: 10% !important;
+	}
+
+	.th, .td{
+		font-size: 5vh !important;
+	}
+
+.carousel{
+	width: 60% !important;
+	height: fit-content !important;
+	margin-left: 20% !important;
+}
+
+	.dropdown{
+		text-align: left !important;
+	}
+
+	.dropdown .dropbtn{
+		font-size: 6vh !important;
+	}
+
+	.dropdown-content{
+		text-align: left !important;
+		left: 0%;
+		margin-right: 0% !important;
+		margin-left: 0% !important;
+		padding: 0 0 0 0 !important;
+	}
+
+	.dropdown-content a{
+		font-size: 6.5vh !important;
+	}
+
+.dropdown-content.open-menu{
+	height: 120px !important;
+}
+
+}
+
+@media(min-width:701px) and (max-width:900px) and (max-height:300px){
+
+	.navbar ul li {
+	display: block !important;
+	font-size: 6vh !important;
+	}
+
+	.navbar{
+		overflow-y: auto;
+	}
+	.navbar ul li .butt{
+		font-size: 5.9vh !important;
+	}
+
+	#navlink{
+	position: absolute !important;
+	background-color: rgba(147, 222, 252, 1.0) !important;
+	height: 110vh !important;
+	width: 280px !important;
+	margin-left: 55% !important;
+	top: 19vh !important;
+	/*right: -200px;*/
+	text-align: left !important;
+	transition: right 0.3s ease !important;
+	z-index: 5000 !important;
+	display: none !important;
+	}
+
+	#navlink.show{
+		display: block !important;
+	}
+
+
+	.navbar ul li a{
+		color: #1860bd !important;
+		text-decoration: none !important;
+	}
+
+
+	.navbar ul li {
+		font-family: Robotomedium !important;
+		list-style: none !important;
+		display: inline-block !important;
+		padding: 10px 5px !important;
+		position: relative !important;
+	}
+
+	.navbar{
+	position: absolute !important;
+	background-color: rgba(147, 222, 252, 1.0)!important;
+	height: 100vh !important;
+	width: 200px;
+	top: 0 !important;
+	right: -200px ;
+	text-align: left !important;
+	transition: 1s !important;
+	z-index: 5000 !important;
+	}
+
+	.navbar ul{
+	padding: 30px !important;
+	}
+
+	.slikax{
+	width: 3vw !important;
+	height: 7vh !important;
+	display: flex !important;
+	}
+
+	nav .fa{
+	color: #fff !important;
+	display: inline-block !important;
+	margin: 10px !important;
+	font-size: 22px !important;
+	cursor: pointer !important;
+	position: relative !important;
+	z-index: 5000 !important;
+	}
+
+	.navbar ul li::after{
+		content: '' !important;
+		width: 0% !important;
+		height: 2px !important;
+		background: #1860bd !important;
+		display: block !important;
+		margin: auto !important;
+		transition: 0.5s !important;
+	}
+
+	.navbar ul li:hover::after{
+		width: 100% !important;
+	}
+
+	.heather{
+	height: 19vh !important;
+	width: 100% !important;
+	background-color: #93defc !important;
+	background-size: cover !important;
+	background-position: center !important;
+	position: fixed !important;
+	}
+
+	h1{
+	text-align: center !important;
+	margin: auto !important;
+	margin-top: 0vh !important;
+	color: #1860bd !important;
+	font-size: 5vh !important;
+	width: 80% !important;
+	}
+
+	hr{
+	width: 80% !important;
+	height: 2px !important;
+	color: #1860bd !important;
+	background-color: #1860bd !important;
+	margin-left: 10vw !important;
+	margin-right: 10vw !important;
+	margin-top: 3vh !important;
+	margin-bottom: 3vh !important;
+	}
+
+	.logo{
+	height: 30pt !important;
+	width: 100% !important;
+	margin-left: 2% !important;
+	margin-top: 1% !important;
+	padding: 0 !important;
+	margin-bottom: 1% !important;
+	}
+
+	.pocetnaslika{
+	position: relative !important;
+  	max-width: 75%  !important;
+  	max-height: 75% !important;
+  	z-index: -100 !important;
+	}
+
+	.slogan{
+	font-family: Kaushan_Script !important;
+	font-size: 9vh !important;
+	color: #edfafc !important;
+	padding: 0 !important;
+	position: absolute !important;
+	text-shadow: 2px 2px #707678 !important;
+	top: 37vw !important;
+    left: 50% !important;
+    text-align: center !important;
+    z-index: -1 !important;
+	}
+
+	.footer {
+	text-align: center !important;
+	margin-top: 0.5vh !important;
+	margin-left: 0.35vw !important;
+	margin-right: 0.35vw !important;
+	margin-bottom: 0.5vh !important;
+	padding-top: 0.5vh !important;
+	padding-bottom: 0.5vh !important;
+	background-color: #93defc !important;
+	height: 40vh !important;
+	}
+
+	.footer h4{
+		font-family: Roboto !important;
+	margin-bottom: 1vh !important;
+	margin-top: 0.5vh !important;
+	color: #1860bd !important;
+	}
+
+	.opis{
+	text-align: center !important;
+	position: absolute !important;
+	margin-left: 26vw !important;
+	margin-right: 26vw !important;
+	margin-bottom: 1vh !important;
+	color: #1860bd !important;
+	font-size: 4vh !important;
+	}
+
+	.ikonice{
+	display: flex !important;
+	align-items: center !important;
+	font-size: 5vh !important;
+	}
+
+	.ikonice .fa{
+	color: #1860bd !important;
+	cursor: pointer !important;
+	margin-top: 25vh !important;
+	margin-bottom: 1vh !important;
+	padding-left: 1vw !important;
+	padding-right: 1vw !important;
+	}
+
+	.destinacija{
+		flex-direction: column !important;
+	}
+
+	.v1{
+		height: 4vh !important;
+		display: none !important;
+	}
+
+.carousel{
+	width: 60% !important;
+	height: fit-content !important;
+	margin-left: 20% !important;
+}
+
+	.dropdown{
+		text-align: left !important;
+	}
+
+	.dropdown .dropbtn{
+		font-size: 5.5vh !important;
+	}
+
+	.dropdown-content{
+		text-align: left !important;
+		left: 0%;
+		margin-right: 0% !important;
+		margin-left: 0% !important;
+		padding: 0 0 0 0 !important;
+	}
+
+	.dropdown-content a{
+		font-size: 6vh !important;
+	}
+
+.dropdown-content.open-menu{
+	height: 120px !important;
+}
+
+}
+
+@media(min-width:501px) and (max-width:700px) and (min-height:301px) and (max-height:500px){
+
+	.navbar ul li {
+	display: block !important;
+		font-size: 4vh !important;
+	}
+
+	.navbar{
+		overflow-y: auto;
+	}
+	.navbar ul li .butt{
+		font-size: 3.9vh !important;
+	}
+
+	#navlink{
+	position: absolute !important;
+	background-color: rgba(147, 222, 252, 1.0) !important;
+	height: 110vh !important;
+	width: 280px !important;
+	margin-left: 47% !important;
+	top: 10vh !important;
+	/*right: -200px;*/
+	text-align: left !important;
+	transition: right 0.3s ease !important;
+	z-index: 5000 !important;
+	padding-right: 40px !important;
+	display: none !important;
+	}
+
+	#navlink.show{
+		display: block !important;
+	}
+
+	.container{
+		flex-direction: column !important;
+	}
+
+	.vl{
+		border-bottom: 3px solid #1860bd !important;
+		width: 100px;
+		height: 0px;
+		border-left: 0px !important;
+		margin-bottom: 10px !important;
+	}
+	.navbar ul li a{
+		color: #1860bd !important;
+		text-decoration: none !important;
+	}
+
+
+	.navbar ul li {
+		font-family: Robotomedium !important;
+		list-style: none !important;
+		display: inline-block !important;
+		padding: 22px 12px !important;
+		position: relative !important;
+	}
+
+	.navbar{
+	position: absolute !important;
+	background-color: rgba(147, 222, 252, 1.0)!important;
+	height: 100vh !important;
+	width: 200px;
+	top: 0 !important;
+	right: -200px ;
+	text-align: left !important;
+	transition: 1s !important;
+	z-index: 5000 !important;
+	}
+
+	.navbar ul{
+	padding: 30px !important;
+	}
+
+	nav .fa{
+	color: #fff !important;
+	display: inline-block !important;
+	margin: 10px !important;
+	font-size: 22px !important;
+	cursor: pointer !important;
+	position: relative !important;
+	z-index: 5000 !important;
+	}
+
+	.navbar ul li::after{
+		content: '' !important;
+		width: 0% !important;
+		height: 2px !important;
+		background: #1860bd !important;
+		display: block !important;
+		margin: auto !important;
+		transition: 0.5s !important;
+	}
+
+	.navbar ul li:hover::after{
+		width: 100% !important;
+	}
+
+	.heather{
+	height: 15vh !important;
+	width: 100% !important;
+	background-color: #93defc !important;
+	background-size: cover !important;
+	background-position: center !important;
+	position: fixed !important;
+	}
+
+	h1{
+	text-align: center !important;
+	margin: auto !important;
+	margin-top: 0vh !important;
+	color: #1860bd !important;
+	font-size: 5vh !important;
+	width: 80% !important;
+	}
+
+	hr{
+	width: 80% !important;
+	height: 2px !important;
+	color: #1860bd !important;
+	background-color: #1860bd !important;
+	margin-left: 10vw !important;
+	margin-right: 10vw !important;
+	margin-top: 3vh !important;
+	margin-bottom: 3vh !important;
+	}
+
+	.logo{
+	height: 30pt !important;
+	width: 100% !important;
+	margin-left: 2% !important;
+	margin-top: 1% !important;
+	padding: 0 !important;
+	margin-bottom: 1% !important;
+	}
+
+	.pocetnaslika{
+	position: relative !important;
+  	max-width: 80%  !important;
+  	max-height: 80% !important;
+  	z-index: -100 !important;
+	}
+
+	.slogan{
+	font-family: Kaushan_Script !important;
+	font-size: 5vh !important;
+	color: #edfafc !important;
+	padding: 0 !important;
+	position: absolute !important;
+	text-shadow: 2px 2px #707678 !important;
+	top: 37vw !important;
+    left: 50% !important;
+    text-align: center !important;
+    z-index: -1 !important;
+	}
+
+	.slika{
+		text-align: center;
+	}
+
+	.footer {
+	text-align: center !important;
+	margin-top: 0.5vh !important;
+	margin-left: 0.35vw !important;
+	margin-right: 0.35vw !important;
+	margin-bottom: 0.5vh !important;
+	padding-top: 0.5vh !important;
+	padding-bottom: 0.5vh !important;
+	background-color: #93defc !important;
+	height: 40vh !important;
+	}
+
+	.footer h4{
+	margin-bottom: 1vh !important;
+	font-size: 3.5vh !important;
+	font-family: Roboto !important;
+	margin-top: 0.5vh !important;
+	color: #1860bd !important;
+	}
+
+	.opis{
+	text-align: center !important;
+	position: absolute !important;
+	margin-left: 10vw !important;
+	margin-right: 10vw !important;
+	margin-bottom: 1vh !important;
+	color: #1860bd !important;
+	font-size: 3vh !important;
+	}
+
+	.ikonice{
+	display: flex !important;
+	align-items: center !important;
+	}
+
+	.ikonice .fa{
+	color: #1860bd !important;
+	cursor: pointer !important;
+	margin-top: 25vh !important;
+	margin-bottom: 1vh !important;
+	padding-left: 1vw !important;
+	padding-right: 1vw !important;
+	}
+
+	.destinacija{
+		flex-direction: column !important;
+	}
+
+	.v1{
+		height: 0 !importantS;
+	}
+
+	.opisdestinacije{
+		padding-top: 3vh !important;
+		font-size: 3vh !important;
+		padding-left: 10% !important;
+		padding-right: 10% !important;
+	}
+
+	.naziv{
+		font-family: Robotomedium !important;
+		font-size: 5vh !important;
+	}
+
+	.th, .td{
+		font-size: 3vh !important;
+	}
+
+.carousel{
+	width: 80% !important;
+	height: fit-content !important;
+	margin-left: 10% !important;
+}
+
+	.dropdown{
+		text-align: left !important;
+	}
+
+	.dropdown .dropbtn{
+		font-size: 4vh !important;
+	}
+
+	.dropdown-content{
+		text-align: left !important;
+		left: 0%;
+		margin-right: 0% !important;
+		margin-left: 0% !important;
+		padding: 0 0 0 0 !important;
+	}
+
+	.dropdown-content a{
+		font-size: 4vh !important;
+	}
+.dropdown-content.open-menu{
+	height: 120px !important;
+}
+
+}
+
+@media(min-width:501px) and (max-width:700px) and (min-height:501px) and (max-height:900px){
+
+	.navbar ul li {
+	display: block !important;
+		font-size: 3vh !important;
+	}
+	.navbar{
+		overflow-y: auto;
+	}
+
+	.container{
+		flex-direction: column !important;
+	}
+
+	.vl{
+		border-bottom: 3px solid #1860bd !important;
+		width: 100px;
+		height: 0px;
+		border-left: 0px !important;
+		margin-bottom: 10px !important;
+	}
+	.navbar ul li .butt{
+		font-size: 2.9vh !important;
+	}
+	#navlink{
+	position: absolute !important;
+	background-color: rgba(147, 222, 252, 1.0) !important;
+	height: 110vh !important;
+	width: 290px !important;
+	margin-left: 43% !important;
+	top: 10vh !important;
+	/*right: -200px;*/
+	text-align: left !important;
+	padding-left: 20px !important;
+	padding-right: 70px !important;
+	transition: right 0.3s ease !important;
+	z-index: 5000 !important;
+	display: none !important;
+	}
+
+	#navlink.show{
+		display: block !important;
+	}
+
+	nav .fa{
+	display: block !important;
+	color: #fff !important;
+	margin: 10px !important;
+	font-size: 22px !important;
+	cursor: pointer !important;
+	position: relative !important;
+	z-index: 5000 !important;
+	}
+
+	.navbar ul{
+	padding: 30px;
+	}
+
+	.heather{
+	height: 10vh !important;
+	width: 100% !important;
+	background-color: #93defc !important;
+	background-size: cover !important;
+	background-position: center !important;
+	position: fixed !important;
+	}
+
+	h1{
+	text-align: center !important;
+	margin: auto !important;
+	margin-top: 0vh !important;
+	margin-bottom: 1vh !important;
+	color: #1860bd !important;
+	font-size: 3vh !important;
+	width: 80% !important;
+	}
+
+	hr{
+	width: 80% !important;
+	height: 2px !important;
+	color: #1860bd !important;
+	background-color: #1860bd !important;
+	margin-left: 10vw !important;
+	margin-right: 10vw !important;
+	margin-top: 3vh !important;
+	margin-bottom: 3vh !important;
+	}
+
+	.logo{
+	height: 35pt !important;
+	width: 100% !important;
+	margin-left: 2% !important;
+	margin-top: 1% !important;
+	padding: 0 !important;
+	margin-bottom: 1% !important;
+	}
+
+	.pocetnaslika{
+	position: relative !important;
+  	max-width: 100% !important;
+  	max-height: 100% !important;
+  	z-index: -100 !important;
+	}
+
+	.slogan{
+	font-family: Kaushan_Script;
+	font-size: 3vh !important;
+	color: #edfafc;
+	padding: 0 !important;
+	position: absolute !important;
+	text-shadow: 2px 2px #707678 !important;
+	top: 49vw !important;
+    left: 50% !important;
+    text-align: center !important;
+    z-index: -1 !important;
+	}
+
+	.footer {
+	text-align: center !important;
+	margin-top: 0.5vh !important;
+	margin-left: 0.35vw !important;
+	margin-right: 0.35vw !important;
+	margin-bottom: 0.5vh !important;
+	padding-top: 0.5vh !important;
+	padding-bottom: 0.5vh !important;
+	background-color: #93defc !important;
+	height: 33vh !important;
+	}
+
+	.footer h4{
+	font-size: 2.5vh !important;
+	margin-bottom: 1.5vh !important;
+	margin-top: 1vh !important;
+	color: #1860bd !important;
+	}
+
+	.opis{
+	text-align: center !important;
+	position: absolute !important;
+	margin-left: 10vw !important;
+	margin-right: 10vw !important;
+	margin-bottom: 1vh !important;
+	color: #1860bd !important;
+	font-size: 2.3vh !important;
+	}
+
+	.ikonice{
+	display: flex !important;
+	align-items: center !important;
+	}
+
+	.ikonice .fa{
+	color: #1860bd;
+	cursor: pointer !important;
+	margin-top: 21vh !important;
+	margin-bottom: 0vh !important;
+	padding-left: 1vw !important;
+	padding-right: 1vw !important;
+	}
+
+	.destinacija{
+		flex-direction: column !important;
+	}
+
+	.v1{
+		height: 0 !importantS;
+	}
+
+	.opisdestinacije{
+		padding-top: 3vh !important;
+		font-size: 3vh !important;
+		padding-left: 10% !important;
+		padding-right: 10% !important;
+	}
+
+	.naziv{
+		font-family: Robotomedium !important;
+		font-size: 5vh !important;
+	}
+
+	.th, .td{
+		font-size: 3vh !important;
+	}
+
+.carousel{
+	width: 80% !important;
+	height: fit-content !important;
+	margin-left: 10% !important;
+}
+
+	.dropdown{
+		text-align: left !important;
+	}
+
+	.dropdown .dropbtn{
+		font-size: 2.9vh !important;
+	}
+
+	.dropdown-content{
+		text-align: left !important;
+		left: 0%;
+		margin-right: 0% !important;
+		margin-left: 0% !important;
+		padding: 0 0 0 0 !important;
+	}
+
+	.dropdown-content a{
+		font-size: 2.8vh !important;
+	}
+
+.dropdown-content.open-menu{
+	height: 150px !important;
+}
+
+
+}
+
+@media(min-width:701px) and (max-width:900px) and (min-height:301px) and (max-height:500px){
+
+	.navbar ul li {
+	display: block !important;
+		font-size: 4vh !important;
+	}
+
+		.navbar{
+		overflow-y: auto;
+	}
+
+	.navbar ul li .butt{
+		font-size: 3.9vh !important;
+	}
+
+	#navlink{
+	position: absolute !important;
+	background-color: rgba(147, 222, 252, 1.0) !important;
+	height: 110vh !important;
+	width: 290px !important;
+	margin-left: 55% !important;
+	top: 11vh !important;
+	/*right: -200px;*/
+	text-align: left !important;
+	padding-left: 20px !important;
+	padding-right: 70px !important;
+	transition: right 0.3s ease !important;
+	z-index: 5000 !important;
+	display: none !important;
+	}
+
+	#navlink.show{
+		display: block !important;
+	}
+	nav .fa{
+	display: block !important;
+	color: #fff;
+	margin: 10px !important;
+	font-size: 22px !important;
+	cursor: pointer !important;
+	position: relative !important;
+	z-index: 5000 !important;
+	}
+
+	.navbar ul{
+	padding: 30px !important;
+	}
+
+	.heather{
+	height: 11vh !important;
+	width: 100% !important;
+	background-color: #93defc ;
+	background-size: cover !important;
+	background-position: center !important;
+	position: fixed !important;
+	}
+
+	h1{
+	text-align: center !important;
+	margin: auto !important;
+	margin-top: 0vh !important;
+	color: #1860bd;
+	font-size: 5vh !important;
+	width: 80% !important;
+	}
+
+	hr{
+	width: 80% !important;
+	height: 2px !important;
+	color: #1860bd !important;
+	background-color: #1860bd;
+	margin-left: 10vw !important;
+	margin-right: 10vw !important;
+	margin-top: 3vh !important;
+	margin-bottom: 3vh !important;
+	}
+
+	.logo{
+	height: 30pt !important;
+	width: 100% !important;
+	margin-left: 2% !important;
+	margin-top: 1% !important;
+	padding: 0 !important;
+	margin-bottom: 1% !important;
+	}
+
+	.pocetnaslika{
+	position: relative !important;
+  	max-width: 80% !important;
+  	max-height: 80% !important;
+  	z-index: -100 !important;
+	}
+
+	.slogan{
+	font-family: Kaushan_Script;
+	font-size: 5vh !important;
+	color: #edfafc;
+	padding: 0 !important;
+	position: absolute !important;
+	text-shadow: 2px 2px #707678;
+	top: 37vw !important;
+    left: 50% !important;
+    text-align: center !important;
+    z-index: -1 !important;
+	}
+
+	.footer {
+	text-align: center !important;
+	margin-top: 0.5vh !important;
+	margin-left: 0.35vw !important;
+	margin-right: 0.35vw !important;
+	margin-bottom: 0.5vh !important;
+	padding-top: 0.5vh !important;
+	padding-bottom: 0.5vh !important;
+	background-color: #93defc;
+	height: 40vh !important;
+	}
+
+	.footer h4{
+	font-size: 4vh !important;
+	font-family: Roboto !important;
+	margin-bottom: 1vh !important;
+	margin-top: 0.5vh !important;
+	color: #1860bd;
+	}
+
+	.opis{
+	text-align: center !important;
+	position: absolute !important;
+	margin-left: 20vw !important;
+	margin-right: 20vw !important;
+	margin-bottom: 1vh !important;
+	color: #1860bd;
+	font-size: 3vh !important;
+	}
+
+	.ikonice{
+	display: flex !important;
+	align-items: center !important;
+	}
+
+	.ikonice .fa{
+	color: #1860bd;
+	cursor: pointer !important;
+	margin-top: 25vh !important;
+	margin-bottom: 1vh !important;
+	padding-left: 1vw !important;
+	padding-right: 1vw !important;
+	}
+
+	.slika{
+		text-align: center;
+	}
+
+	.destinacija{
+		flex-direction: column !important;
+	}
+
+	.v1{
+		height: 0 !importantS;
+	}
+
+	.opisdestinacije{
+		padding-top: 3vh !important;
+		font-size: 3vh !important;
+		padding-left: 10% !important;
+		padding-right: 10% !important;
+	}
+
+	.naziv{
+		font-family: Robotomedium !important;
+		font-size: 5vh !important;
+	}
+
+	.th, .td{
+		font-size: 3vh !important;
+	}
+
+.carousel{
+	width: 80% !important;
+	height: fit-content !important;
+	margin-left: 10% !important;
+}
+
+	.dropdown{
+		text-align: left !important;
+	}
+
+	.dropdown .dropbtn{
+		font-size: 3.7vh !important;
+	}
+
+	.dropdown-content{
+		text-align: left !important;
+		left: 0%;
+		margin-right: 0% !important;
+		margin-left: 0% !important;
+		padding: 0 0 0 0 !important;
+	}
+
+	.dropdown-content a{
+		font-size: 3.7vh !important;
+	} 
+
+	.dropdown-content.open-menu{
+	height: 120px !important;
+}
+
+}
+
+@media(min-width:701px) and (max-width:900px) and (min-height:501px) and (max-height:800px){
+
+	.navbar ul li {
+	display: block !important;
+	font-size: 3vh !important;
+	}
+
+		.navbar{
+		overflow-y: auto;
+	}
+
+	.navbar ul li .butt{
+		font-size: 2.9vh !important;
+	}
+	#navlink{
+	position: absolute !important;
+	background-color: rgba(147, 222, 252, 1.0) !important;
+	height: 110vh !important;
+	width: 290px !important;
+	margin-left: 55% !important;
+	top: 13vh !important;
+	/*right: -200px;*/
+	text-align: left !important;
+	padding-left: 20px !important;
+	padding-right: 70px !important;
+	transition: right 0.3s ease !important;
+	z-index: 5000 !important;
+	display: none !important;
+	}
+
+	#navlink.show{
+		display: block !important;
+	}	
+
+	.navbar{
+	position: absolute !important;
+	background-color: rgba(147, 222, 252, 1.0) !important;
+	height: 200vh !important;
+	width: 200px;
+	top: 0 !important;
+	right: -200px;
+	text-align: left !important;
+	transition: 1s !important;
+	z-index: 5000 !important;
+	}
+
+	nav .fa{
+	display: block !important;
+	color: #fff !important;
+	margin: 10px !important;
+	font-size: 27px !important;
+	cursor: pointer !important;
+	position: relative !important;
+	z-index: 5000 !important;
+	}
+
+	.navbar ul{
+	padding: 30px !important;
+	}
+
+	.heather{
+	height: 13vh !important;
+	width: 100% !important;
+	background-color: #93defc !important;
+	background-size: cover !important;
+	background-position: center !important;
+	position: fixed !important;
+	}
+
+	h1{
+	text-align: center !important;
+	margin: auto !important;
+	margin-top: 0vh !important;
+	color: #1860bd !important;
+	font-size: 3vh !important;
+	width: 80% !important;
+	}
+
+	hr{
+	width: 80% !important;
+	height: 2px !important;
+	color: #1860bd;
+	background-color: #1860bd;
+	margin-left: 10vw !important;
+	margin-right: 10vw !important;
+	margin-top: 3vh !important;
+	margin-bottom: 3vh !important;
+	}
+
+	.logo{
+	height: 45pt !important;
+	width: 100% !important;
+	margin-left: 2% !important;
+	margin-top: 1% !important;
+	padding: 0 !important;
+	margin-bottom: 1% !important;
+	}
+
+	.pocetnaslika{
+	position: relative !important;
+  	max-width: 100% !important;
+  	max-height: 100% !important;
+  	z-index: -100 !important;
+	}
+
+	.slogan{
+	font-family: Kaushan_Script;
+	font-size: 5vh !important;
+	color: #edfafc;
+	padding: 0 !important;
+	position: absolute !important;
+	text-shadow: 2px 2px #707678 !important;
+	top: 50vw !important;
+    left: 50% !important;
+    text-align: center !important;
+    z-index: -1;
+	}
+
+	.footer {
+	text-align: center !important;
+	margin-top: 0.5vh !important;
+	margin-left: 0.35vw !important;
+	margin-right: 0.35vw !important;
+	margin-bottom: 0.5vh !important;
+	padding-top: 0.5vh !important;
+	padding-bottom: 0.5vh !important;
+	background-color: #93defc;
+	height: 30vh !important;
+	}
+
+	.footer h4{
+	margin-bottom: 2vh !important;
+	margin-top: 1vh !important;
+	color: #1860bd;
+	font-size: 3vh !important;
+	}
+
+	.opis{
+	text-align: center !important;
+	position: absolute !important;
+	margin-left: 12vw !important;
+	margin-right: 9vw !important;
+	margin-bottom: 5vh !important;
+	color: #1860bd;
+	font-size: 2.5vh !important;
+	}
+
+	.ikonice{
+	display: flex !important;
+	align-items: center !important;
+	font-size: 3vh !important;
+	}
+
+	.ikonice .fa{
+	color: #1860bd;
+	cursor: pointer !important;
+	margin-top: 16vh !important;
+	margin-bottom: 1vh !important;
+	padding-left: 1vw !important;
+	padding-right: 1vw !important;
+	}
+
+	.destinacija{
+		flex-direction: column !important;
+	}
+
+	.v1{
+		height: 4vh !important;
+		display: none !important;
+	}
+
+.carousel{
+	width: 80% !important;
+	height: fit-content !important;
+	margin-left: 10% !important;
+}
+
+	.dropdown{
+		text-align: left !important;
+	}
+
+	.dropdown .dropbtn{
+		font-size:2.9vh !important;
+	}
+
+	.dropdown-content{
+		text-align: left !important;
+		left: 0%;
+		margin-right: 0% !important;
+		margin-left: 0% !important;
+		padding: 0 0 0 0 !important;
+	}
+
+	.dropdown-content a{
+		font-size: 2.9vh !important;
+	}
+
+	.dropdown-content.open-menu{
+	height: 180px !important;
+}
+
+}
+ 
+@media(min-width:901px) and (max-width:1200px) and (max-height:500px){
+		.navbar{
+		overflow-y: auto;
+	}
+
+	.navbar ul li {
+	display: block !important;
+	font-size: 4vh !important;
+	}
+
+	.navbar ul li .butt{
+		font-size: 3.9vh !important;
+	}
+	#navlink{
+	position: absolute !important;
+	background-color: rgba(147, 222, 252, 1.0) !important;
+	height: 90vh !important;
+	width: 340px !important;
+	margin-left: 60% !important;
+	top: 19vh !important;
+	/*right: -200px;*/
+	text-align: left !important;
+	padding-left: 20px !important;
+	padding-right: 100px !important;
+	transition: right 0.3s ease !important;
+	z-index: 5000 !important;
+	display: none !important;
+	}
+
+	#navlink.show{
+		display: block !important;
+	}	
+
+	nav .fa{
+	display: block !important;
+	color: #fff !important;
+	margin: 10px !important;
+	font-size: 35px !important;
+	cursor: pointer !important;
+	position: relative !important;
+	z-index: 5000 !important;
+	}
+
+	.navbar ul{
+	padding: 30px !important;
+	}
+
+	.heather{
+	height: 19vh !important;
+	width: 100% !important;
+	background-color: #93defc !important;
+	background-size: cover !important;
+	background-position: center !important;
+	position: fixed !important;
+	}
+
+	.slika{
+		text-align: center;
+	}
+
+	h1{
+	text-align: center !important;
+	margin: auto !important;
+	margin-top: 0vh !important;
+	color: #1860bd;
+	font-size: 6vh !important;
+	width: 80% !important;
+	padding-bottom: 2vh !important;
+	}
+
+	hr{
+	width: 80% !important;
+	height: 2px !important;
+	color: #1860bd !important;
+	background-color: #1860bd;
+	margin-left: 10vw !important;
+	margin-right: 10vw !important;
+	margin-top: 3vh !important;
+	margin-bottom: 3vh !important;
+	}
+
+	.logo{
+	height: 50pt !important;
+	width: 100% !important;
+	margin-left: 2% !important;
+	margin-top: 1% !important;
+	padding: 0 !important;
+	margin-bottom: 1% !important;
+	}
+
+	.pocetnaslika{
+	position: relative !important;
+  	max-width: 85% !important;
+  	max-height: 85% !important;
+  	z-index: -100 !important;
+	}
+
+	.slogan{
+	font-family: Kaushan_Script;
+	font-size: 6vh !important;
+	color: #edfafc;
+	padding: 0 !important;
+	position: absolute !important;
+	text-shadow: 2px 2px #707678 !important;
+	top: 41vw !important;
+    left: 50% !important;
+    text-align: center !important;
+    z-index: -1 !important;
+	}
+
+
+	.footer {
+	text-align: center !important;
+	margin-top: 0.5vh !important;
+	margin-left: 0.35vw !important;
+	margin-right: 0.35vw !important;
+	margin-bottom: 0.5vh !important;
+	padding-top: 0.5vh !important;
+	padding-bottom: 0.5vh !important;
+	background-color: #93defc !important;
+	height: 52vh !important;
+	}
+
+	.footer h4{
+	margin-bottom: 3vh !important;
+	margin-top: 3vh !important;
+	color: #1860bd;
+	font-size: 5vh !important;
+	}
+
+	.opis{
+	text-align: center !important;
+	position: absolute !important;
+	margin-left: 16vw !important;
+	margin-right: 16vw !important;
+	margin-bottom: 1vh !important;
+	color: #1860bd;
+	font-size: 4vh !important;
+	}
+
+	.ikonice{
+	display: flex !important;
+	align-items: center !important;
+	font-size: 4vh !important;
+	}
+
+	.ikonice .fa{
+	color: #1860bd;
+	cursor: pointer !important;
+	margin-top: 33vh !important;
+	margin-bottom: 5vh !important;
+	padding-left: 1vw !important;
+	padding-right: 1vw !important;
+	}
+
+
+	.destinacija{
+		flex-direction: column !important;
+	}
+
+	.v1{
+		height: 0 !importantS;
+	}
+
+	.opisdestinacije{
+		padding-top: 3vh !important;
+		font-size: 4vh !important;
+		padding-left: 10% !important;
+		padding-right: 10% !important;
+	}
+
+	.naziv{
+		font-family: Robotomedium !important;
+		font-size: 6vh !important;
+	}
+
+	.th, .td{
+		font-size: 4vh !important;
+	}
+
+.carousel{
+	width: 80% !important;
+	height: fit-content !important;
+	margin-left: 10% !important;
+}
+
+	.dropdown{
+		text-align: left !important;
+	}
+
+	.dropdown .dropbtn{
+		font-size: 4vh !important;
+	}
+
+	.dropdown-content{
+		text-align: left !important;
+		left: 0%;
+		margin-right: 0% !important;
+		margin-left: 0% !important;
+		padding: 0 0 0 0 !important;
+	}
+
+	.dropdown-content a{
+		font-size: 3.5vh !important;
+	}
+
+	.dropdown-content.open-menu{
+	height: 120px !important;
+}
+
+}
+
+@media(min-width:901px) and (max-width:1200px) and (min-height:501px) and (max-height:800px){
+		.navbar{
+		overflow-y: auto;
+	}
+
+	.navbar ul li {
+	display: block !important;
+	font-size: 3vh !important;
+	}
+
+	.navbar ul li .butt{
+		font-size: 2.9vh !important;
+	}
+
+	#navlink{
+	position: absolute !important;
+	background-color: rgba(147, 222, 252, 1.0) !important;
+	height: 90vh !important;
+	width: 340px !important;
+	margin-left: 60% !important;
+	top: 17vh !important;
+	/*right: -200px;*/
+	text-align: left !important;
+	padding-left: 20px !important;
+	padding-right: 100px !important;
+	transition: right 0.3s ease !important;
+	z-index: 5000 !important;
+	display: none !important;
+	}
+
+	#navlink.show{
+		display: block !important;
+	}	
+
+	nav .fa{
+	display: block !important;
+	color: #fff;
+	margin: 10px !important;
+	font-size: 35px !important;
+	cursor: pointer !important;
+	position: relative !important;
+	z-index: 5000 !important;
+	}
+
+	.navbar ul{
+	padding: 30px !important;
+	}
+
+	.heather{
+	height: 17vh !important;
+	width: 100% !important;
+	background-color: #93defc !important;
+	background-size: cover !important;
+	background-position: center !important;
+	position: fixed !important;
+	}
+
+	h1{
+	text-align: center !important;
+	margin: auto !important;
+	margin-top: 0vh !important;
+	color: #1860bd !important;
+	font-size: 4vh !important;
+	width: 80% !important;
+	padding-bottom: 2vh !important;
+	}
+
+	hr{
+	width: 80% !important;
+	height: 2px !important;
+	color: #1860bd !important;
+	background-color: #1860bd !important;
+	margin-left: 10vw !important;
+	margin-right: 10vw !important;
+	margin-top: 3vh !important;
+	margin-bottom: 3vh !important;
+	}
+
+	.logo{
+	height: 60pt !important;
+	width: 100% !important;
+	margin-left: 2% !important;
+	margin-top: 1% !important;
+	padding: 0 !important;
+	margin-bottom: 1% !important;
+	}
+
+	.pocetnaslika{
+	position: relative !important;
+  	max-width: 85% !important;
+  	max-height: 85% !important;
+  	z-index: -100 !important;
+	}
+
+	.slogan{
+	font-family: Kaushan_Script;
+	font-size: 5vh !important;
+	color: #edfafc;
+	padding: 0 !important;
+	position: absolute !important;
+	text-shadow: 2px 2px #707678 !important;
+	top: 41vw !important;
+    left: 50% !important;
+    text-align: center !important;
+    z-index: -1 !important;
+	}
+
+	.footer {
+	text-align: center !important;
+	margin-top: 0.5vh !important;
+	margin-left: 0.35vw !important;
+	margin-right: 0.35vw !important;
+	margin-bottom: 0.5vh !important;
+	padding-top: 0.5vh !important;
+	padding-bottom: 0.5vh !important;
+	background-color: #93defc;
+	height: 30vh !important;
+	}
+
+	.footer h4{
+	margin-bottom: 2vh !important;
+	margin-top: 1vh !important;
+	color: #1860bd;
+	font-size: 3vh !important;
+	}
+
+	.opis{
+	text-align: center !important;
+	position: absolute !important;
+	margin-left: 14vw !important;
+	margin-right: 14vw !important;
+	margin-bottom: 1vh !important;
+	color: #1860bd;
+	font-size: 2.7vh !important;
+	}
+
+	.ikonice{
+	display: flex !important;
+	align-items: center !important;
+	font-size: 3vh !important;
+	}
+
+	.ikonice .fa{
+	color: #1860bd;
+	cursor: pointer !important;
+	margin-top: 17vh !important;
+	margin-bottom: 3vh !important;
+	padding-left: 1vw !important;
+	padding-right: 1vw !important;
+	}
+
+	.destinacija{
+		flex-direction: column !important;
+	}
+
+	.v1{
+		height: 0 !importantS;
+	}
+
+	.opisdestinacije{
+		padding-top: 3vh !important;
+		font-size: 3vh !important;
+		padding-left: 10% !important;
+		padding-right: 10% !important;
+	}
+
+	.naziv{
+		font-family: Robotomedium !important;
+		font-size: 5vh !important;
+	}
+
+	.th, .td{
+		font-size: 3vh !important;
+	}
+
+	.slika{
+		text-align: center;
+	}
+
+.carousel{
+	width: 80% !important;
+	height: fit-content !important;
+	margin-left: 10% !important;
+}
+
+	.dropdown{
+		text-align: left !important;
+	}
+
+	.dropdown .dropbtn{
+		font-size: 3vh !important;
+	}
+
+	.dropdown-content{
+		text-align: left !important;
+		left: 0%;
+		margin-right: 0% !important;
+		margin-left: 0% !important;
+		padding: 0 0 0 0 !important;
+	}
+
+	.dropdown-content a{
+		font-size: 3.15vh !important;
+	}
+
+	.dropdown-content.open-menu{
+		height: 180px !important;
+	}
+}
+
+@media(min-width:901px) and (max-width:1200px) and (min-height:801px) and (max-height:1200px){
+	
+	.navbar{
+		overflow-y: auto;
+	}
+	.navbar ul li {
+	display: block !important;
+	font-size: 2vh !important;
+	}
+
+	.navbar ul li .butt{
+		font-size: 1.9vh !important;
+	}
+
+	#navlink{
+	position: absolute !important;
+	background-color: rgba(147, 222, 252, 1.0) !important;
+	height: 90vh !important;
+	width: 340px !important;
+	margin-left: 60% !important;
+	top: 11vh !important;
+	/*right: -200px;*/
+	text-align: left !important;
+	padding-left: 20px !important;
+	padding-right: 100px !important;
+	transition: right 0.3s ease !important;
+	z-index: 5000 !important;
+	display: none !important;
+	}
+
+	#navlink.show{
+		display: block !important;
+	}	
+
+	nav .fa{
+	display: block !important;
+	color: #fff;
+	margin: 10px !important;
+	font-size: 35px !important;
+	cursor: pointer !important;
+	position: relative !important;
+	z-index: 5000 !important;
+	}
+
+	.navbar ul{
+	padding: 30px !important;
+	}
+
+	.heather{
+	height: 11vh !important;
+	width: 100% !important;
+	background-color: #93defc !important;
+	background-size: cover !important;
+	background-position: center !important;
+	position: fixed !important;
+	}
+
+	h1{
+	text-align: center !important;
+	margin: auto !important;
+	margin-top: 0vh !important;
+	color: #1860bd !important;
+	font-size: 4vh !important;
+	width: 80% !important;
+	padding-bottom: 2vh !important;
+	}
+
+	hr{
+	width: 80% !important;
+	height: 2px !important;
+	color: #1860bd !important;
+	background-color: #1860bd !important;
+	margin-left: 10vw !important;
+	margin-right: 10vw !important;
+	margin-top: 3vh !important;
+	margin-bottom: 3vh !important;
+	}
+
+	.logo{
+	height: 60pt !important;
+	width: 100% !important;
+	margin-left: 2% !important;
+	margin-top: 1% !important;
+	padding: 0 !important;
+	margin-bottom: 1% !important;
+	}
+
+	.pocetnaslika{
+	position: relative !important;
+  	max-width: 85% !important;
+  	max-height: 85% !important;
+  	z-index: -100 !important;
+	}
+
+	.slogan{
+	font-family: Kaushan_Script;
+	font-size: 5vh !important;
+	color: #edfafc;
+	padding: 0 !important;
+	position: absolute !important;
+	text-shadow: 2px 2px #707678 !important;
+	top: 41vw !important;
+    left: 50% !important;
+    text-align: center !important;
+    z-index: -1 !important;
+	}
+
+	.footer {
+	text-align: center !important;
+	margin-top: 0.5vh !important;
+	margin-left: 0.35vw !important;
+	margin-right: 0.35vw !important;
+	margin-bottom: 0.5vh !important;
+	padding-top: 0.5vh !important;
+	padding-bottom: 0.5vh !important;
+	background-color: #93defc;
+	height: 33vh !important;
+	}
+
+	.footer h4{
+	margin-bottom: 2vh !important;
+	margin-top: 1vh !important;
+	color: #1860bd;
+	font-size: 3vh !important;
+	}
+
+	.opis{
+	text-align: center !important;
+	position: absolute !important;
+	margin-left: 14vw !important;
+	margin-right: 14vw !important;
+	margin-bottom: 1vh !important;
+	color: #1860bd;
+	font-size: 2.5vh !important;
+	}
+
+	.ikonice{
+	display: flex !important;
+	align-items: center !important;
+	font-size: 3vh !important;
+	}
+
+	.ikonice .fa{
+	color: #1860bd;
+	cursor: pointer !important;
+	margin-top: 20vh !important;
+	margin-bottom: 3vh !important;
+	padding-left: 1vw !important;
+	padding-right: 1vw !important;
+	}
+
+	.slika{
+		text-align: center;
+	}
+
+	.destinacija{
+		flex-direction: column !important;
+	}
+
+	.v1{
+		height: 0 !important;
+	}
+
+	.opisdestinacije{
+		padding-top: 3vh !important;
+		font-size: 3vh !important;
+		padding-left: 10% !important;
+		padding-right: 10% !important;
+	}
+
+	.naziv{
+		font-family: Robotomedium !important;
+		font-size: 5vh !important;
+	}
+
+	.th, .td{
+		font-size: 3vh !important;
+	}
+
+.carousel{
+	width: 80% !important;
+	height: fit-content !important;
+	margin-left: 10% !important;
+}
+
+	.dropdown{
+		text-align: left !important;
+	}
+
+	.dropdown .dropbtn{
+		font-size: 1.9vh !important;
+	}
+
+	.dropdown-content{
+		text-align: left !important;
+		left: 0%;
+		margin-right: 0% !important;
+		margin-left: 0% !important;
+		padding: 0 0 0 0 !important;
+	}
+
+	.dropdown-content a{
+		font-size: 2vh !important;
+	}
+
+	.dropdown-content.open-menu{
+		height: 150px !important;
+	}
+
+
+}
+
+@media(min-width:501px) and (max-width:900px) and (min-height:801px) and (max-height:1200px){
+		.navbar{
+		overflow-y: auto;
+	}
+
+	.navbar ul li {
+	display: block !important;
+	font-size: 2vh !important;
+	}
+
+	.navbar ul li .butt{
+		font-size: 2vh !important;
+	}
+
+	#navlink{
+	position: absolute !important;
+	background-color: rgba(147, 222, 252, 1.0) !important;
+	height: 90vh !important;
+	width: 400px !important;
+	margin-left: 40% !important;
+	top: 11vh !important;
+	/*right: -200px;*/
+	text-align: left !important;
+	padding-left: 20px !important;
+	padding-right: 140px !important;
+	transition: right 0.3s ease !important;
+	z-index: 5000 !important;
+	display: none !important;
+	}
+
+	#navlink.show{
+		display: block !important;
+	}	
+
+	.container{
+		flex-direction: column !important;
+	}
+
+	.vl{
+		border-bottom: 3px solid #1860bd !important;
+		width: 100px;
+		height: 0px;
+		border-left: 0px !important;
+		margin-bottom: 10px !important;
+	}
+
+	nav .fa{
+	display: block !important;
+	color: #fff;
+	margin: 10px !important;
+	font-size: 35px !important;
+	cursor: pointer !important;
+	position: relative !important;
+	z-index: 5000 !important;
+	}
+
+	.navbar ul{
+	padding: 30px !important;
+	}
+
+	.heather{
+	height: 11vh !important;
+	width: 100% !important;
+	background-color: #93defc !important;
+	background-size: cover !important;
+	background-position: center !important;
+	position: fixed !important;
+	}
+
+	h1{
+	text-align: center !important;
+	margin: auto !important;
+	margin-top: 0vh !important;
+	color: #1860bd !important;
+	font-size: 2.5vh !important;
+	width: 80% !important;
+	padding-bottom: 2vh !important;
+	}
+
+	.linija{
+	width: 80% !important;
+	height: 2px !important;
+	color: #1860bd !important;
+	background-color: #1860bd !important;
+	margin-left: 10vw !important;
+	margin-right: 10vw !important;
+	margin-top: 3vh !important;
+	margin-bottom: 3vh !important;
+	}
+
+	.logo{
+	height: 60pt !important;
+	width: 100% !important;
+	margin-left: 2% !important;
+	margin-top: 1% !important;
+	padding: 0 !important;
+	margin-bottom: 1% !important;
+	}
+
+	.pocetnaslika{
+	position: relative !important;
+  	max-width: 100% !important;
+  	max-height: 100% !important;
+  	z-index: -100 !important;
+	}
+
+	.slogan{
+	font-family: Kaushan_Script;
+	font-size: 2.5vh !important;
+	color: #edfafc;
+	padding: 0 !important;
+	position: absolute !important;
+	text-shadow: 2px 2px #707678 !important;
+	top: 50vw !important;
+    left: 50% !important;
+    text-align: center !important;
+    z-index: -1 !important;
+	}
+
+	.footer {
+	text-align: center !important;
+	margin-top: 0.5vh !important;
+	margin-left: 0.35vw !important;
+	margin-right: 0.35vw !important;
+	margin-bottom: 0.5vh !important;
+	padding-top: 0.5vh !important;
+	padding-bottom: 0.5vh !important;
+	background-color: #93defc;
+	height: 30vh !important;
+	}
+
+	.footer h4{
+	margin-bottom: 2vh !important;
+	margin-top: 1vh !important;
+	color: #1860bd;
+	font-size: 2vh !important;
+	}
+
+	.opis{
+	text-align: center !important;
+	position: absolute !important;
+	margin-left: 16vw !important;
+	margin-right: 16vw !important;
+	margin-bottom: 1vh !important;
+	color: #1860bd;
+	font-size: 2vh !important;
+	}
+
+	.ikonice{
+	display: flex !important;
+	align-items: center !important;
+	font-size: 2vh !important;
+	}
+
+	.ikonice .fa{
+	color: #1860bd;
+	cursor: pointer !important;
+	margin-top: 20vh !important;
+	margin-bottom: 3vh !important;
+	padding-left: 1vw !important;
+	padding-right: 1vw !important;
+	}
+
+	.destinacija{
+		flex-direction: column !important;
+	}
+
+	.v1{
+		height: 0 !importantS;
+	}
+
+	.opisdestinacije{
+		padding-top: 3vh !important;
+		font-size: 3vh !important;
+		padding-left: 10% !important;
+		padding-right: 10% !important;
+	}
+
+	.naziv{
+		font-family: Robotomedium !important;
+		font-size: 5vh !important;
+	}
+
+	.th, .td{
+		font-size: 3vh !important;
+	}
+
+.carousel{
+	width: 80% !important;
+	height: fit-content !important;
+	margin-left: -2.5% !important;
+}
+
+	.dropdown{
+		text-align: left !important;
+	}
+
+	.dropdown .dropbtn{
+		font-size: 2vh !important;
+	}
+
+	.dropdown-content{
+		text-align: left !important;
+		left: 0%;
+		margin-right: 0% !important;
+		margin-left: 0% !important;
+		padding: 0 0 0 0 !important;
+	}
+
+	.dropdown-content a{
+		font-size: 2vh !important;
+	}
+
+	.dropdown-content.open-menu{
+		height: 180px !important;
+	}
+
+}
+
